@@ -1,0 +1,110 @@
+* {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 16px 0;
+    background-color: rgba(76, 124, 203, 0.402);
+    color: #fff;
+    font-weight: bold;
+}
+
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    color:#fff;
+    font-size: 24px;
+}
+
+header nav a{
+    text-decoration: none;
+    cursor: pointer;
+    color:#fff;
+}
+
+.container,
+.products  {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .container {
+    display:flex;
+}
+.about{
+    padding-top: 10px;
+}
+.about p {
+    margin: 40px 0px 0px 10px;
+    font-size: 22px;
+}
+
+section h2 {
+    font-weight: bold;
+    color: rgba(76, 124, 203, 0.402);
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(76, 124, 203, 0.402);
+}
+
+section .container img{
+    padding: 5px;
+    max-width: 700px;
+}
+
+.containerProducts{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    margin-top: 15px;
+}
+.shoesProduct img{
+    cursor: pointer;
+    max-width: 300px;
+}
+
+@media screen and (max-width: 767px) {
+    .about .container,
+    .containerProducts {
+        display: block;
+    }
+    .about .container img,
+    .products .containerProducts img{
+        max-width: 100%;
+    }
+    .about{
+        padding-top: 10px;
+    }
+    .about p {
+        margin: 40px 0px 40px 10px;
+        font-size: 22px;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .about .container,
+    .containerProducts {
+        display: block;
+    }
+    .about .container img,
+    .products .containerProducts img{
+        max-width: 100%;
+    }
+    .about{
+        padding-top: 10px;
+    }
+    .about p {
+        margin: 40px 0px 40px 10px;
+        font-size: 22px;
+    }
+    
+}
